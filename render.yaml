@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: pdf-api
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn api:app --host 0.0.0.0 --port $PORT
-    systemDependencies:
-      - name: tesseract-ocr
-      - name: poppler-utils
