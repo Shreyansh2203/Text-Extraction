@@ -1,7 +1,6 @@
 fastapi
 uvicorn
-pydantic
 pdfplumber
-pytesseract
-pdf2image
+langdetect
 python-multipart
+pydantic
