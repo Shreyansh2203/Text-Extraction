@@ -50,7 +50,7 @@ class PDFRequest(BaseModel):
     contentType: str
     contentBytes: str
 
-@app.post("/extract_json")
+@app.post("/extract_text")
 async def extract_from_bytes_endpoint(request: PDFRequest):
     if request.contentType.upper() != "PDF":
         raise HTTPException(status_code=400, detail="Only PDF content type is supported.")
